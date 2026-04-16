@@ -174,7 +174,7 @@ enum status: { want_to_read: 0, reading: 1, read: 2 }
 
 **Основна модель:** `Course`
 ```bash
-rails generate model Course title:string category:string duration_hours:integer start_date:date end_date:date price:float status:integer
+rails generate model Course title:string category:string main_topic:string duration_hours:integer start_date:date end_date:date price:float status:integer
 ```
 ```ruby
 enum status: { draft: 0, active: 1, archived: 2 }
@@ -210,7 +210,7 @@ enum status: { planned: 0, ongoing: 1, completed: 2, cancelled: 3 }
 
 **Основна модель:** `Project`
 ```bash
-rails generate model Project title:string category:string client:string start_date:date deadline:date budget:float status:integer
+rails generate model Project title:string category:string main_tag:string client:string start_date:date deadline:date budget:float status:integer
 ```
 ```ruby
 enum status: { planned: 0, in_progress: 1, completed: 2, cancelled: 3 }
